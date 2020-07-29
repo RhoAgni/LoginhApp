@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="296dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ifortech" />
+
+    <EditText
+        android:id="@+id/EmailBox"
+        android:layout_width="345dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/White"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="EMAIL"
+        android:inputType="textWebEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Logo" />
+
+    <EditText
+        android:id="@+id/PasswordBox"
+        android:layout_width="345dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/White"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="PASSWORD"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/EmailBox"
+        app:layout_constraintTop_toBottomOf="@+id/EmailBox" />
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@color/colorPrimary"
+        android:onClick="Login"
+        android:text="LOG IN"
+        android:textColor="@color/White"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/EmailBox"
+        app:layout_constraintTop_toBottomOf="@+id/Logo" />
+
+    <CheckBox
+        android:id="@+id/rememberMe"
+        android:layout_width="146dp"
+        android:layout_height="43dp"
+        android:text="Remember Email"
+        android:textColor="@color/White"
+        app:layout_constraintEnd_toEndOf="@+id/Login"
+        app:layout_constraintStart_toStartOf="@+id/Login"
+        app:layout_constraintTop_toBottomOf="@+id/Login" />
+
+    <CheckBox
+        android:id="@+id/stayConnected"
+        android:layout_width="146dp"
+        android:layout_height="39dp"
+        android:text="Stay Connected"
+        android:textColor="@color/White"
+        app:layout_constraintEnd_toEndOf="@+id/rememberMe"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rememberMe"
+        app:layout_constraintTop_toBottomOf="@+id/rememberMe" />
+</androidx.constraintlayout.widget.ConstraintLayout>
